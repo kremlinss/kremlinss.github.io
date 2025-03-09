@@ -19,19 +19,26 @@
     <section id="videos">
         <h2>Videos</h2>
         <div class="video-player">
-            <video controls>
-                <source src="videos/sample.mp4" type="video/mp4">
+            <video id="videoPlayer" controls>
+                <source src="videos/Dune.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <div class="video-controls">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="increaseVolume()">Volume +</button>
+                <button onclick="decreaseVolume()">Volume -</button>
+            </div>
         </div>
     </section>
-
+    
     <section id="photos">
         <h2>Photos</h2>
         <div class="photo-gallery">
-            <img src="images/sample1.jpg" alt="Photo 1">
-            <img src="images/sample2.jpg" alt="Photo 2">
-            <img src="images/sample3.jpg" alt="Photo 3">
+            <img id="photo" src="images/ela.jpg" alt="Photo">
+            <div class="gallery-controls">
+                <button onclick="prevPhoto()">Previous</button>
+                <button onclick="nextPhoto()">Next</button>
+            </div>
         </div>
     </section>
 
@@ -46,6 +53,13 @@
                 <img src="icons/folder1.jpg" alt="Folder Icon" class="icon">
                 <a href="images/">Images</a>
             </div>
+        </div>
+    </section>
+
+    <section id="explore">
+        <h2>Explore Files</h2>
+        <div class="file-explorer" id="fileExplorer">
+            <!-- Files will be loaded here dynamically -->
         </div>
     </section>
 
