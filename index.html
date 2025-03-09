@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AlperFlix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AlperFlix</h1>
+        <p>Your personal streaming server.</p>
+    </header>
+
+    <nav>
+        <a href="#videos">Videos</a>
+        <a href="#photos">Photos</a>
+        <a href="#explore">Explore</a>
+    </nav>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <div class="video-player">
+            <video controls>
+                <source src="videos/sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h2>Photos</h2>
+        <div class="photo-gallery">
+            <img src="images/sample1.jpg" alt="Photo 1">
+            <img src="images/sample2.jpg" alt="Photo 2">
+            <img src="images/sample3.jpg" alt="Photo 3">
+        </div>
+    </section>
+
+    <section id="explore">
+        <h2>Explore Files</h2>
+        <div class="file-explorer">
+            <div class="file-item">
+                <img src="icons/folder1.jpg" alt="Folder Icon" class="icon">
+                <a href="videos/">Videos</a>
+            </div>
+            <div class="file-item">
+                <img src="icons/folder1.jpg" alt="Folder Icon" class="icon">
+                <a href="images/">Images</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AlperFlix. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
